@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+        body {
+            box-sizing: border-box;
+            font-family: 'Montserrat', sans-serif;
+            /* background-color: #161132; */
+            margin: 0;
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 100%;
+            background-image: url('https://t4.ftcdn.net/jpg/05/36/98/35/360_F_536983544_IwVIsszIaVB6pd5SeslDBYarZNMrTlrz.jpg');
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+
+        }
+
+        .head {
+            display: flex;
+            justify-content: space-around;
+            padding-bottom: 30px;
+            font-size: 40px;
+            font-weight: 600;
+            font-family: 'Montserrat', sans-serif;
+            background: linear-gradient(to left,
+                    violet,
+                    indigo,
+                    blue,
+                    green,
+                    yellow,
+                    orange,
+                    red);
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+
+        @keyframes wave {
+            0% {
+                background-position: 0 0;
+            }
+
+            100% {
+                background-position: 50vw 10px;
+            }
+
+        }
+
+        form {
+            background-color:rgba(34, 34, 34,0.9);
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(159, 46, 46, 0.1);
+            width: 320px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 13px;
+            color:#FEFCFF;
+            font-weight: 900;
+        }
+
+        input {
+            width: 95%;
+            padding: 8px;
+            margin-bottom: 16px;
+            border: 1px solid #000000;
+            border-radius: 4px;
+            border:none;
+            outline: none;
+        }
+
+        button {
+            background-color: orangered;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+           margin-top: 5px;
+        }
+
+        button:hover {
+            background-color: green;
+        }
+
+        .Forget {
+            display: flex;
+            display: inline-block;
+        }
+
+        .Forget a {
+            text-decoration: none;
+            color:white;
+            transition: all 0.3s ease;
+            margin-left: 75px;
+           
+        }
+
+        .Forget:hover a{
+           color:rgb(0, 0, 255);
+        }
+        @media screen and (max-width:320px) {
+            form {
+                margin: 10px;
+            width: 94%;
+            height: 370px;
+        }
+        button {
+            margin-right: 43px;
+        }
+            
+        }
+    </style>
+
+</head>
+
+<body>
+    <form>
+        <span class="head">Form_Get</span>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" placeholder="Enter your username" autofocus required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password" required> <br>
+
+        <button type="submit">Register</button>
+        <li class="Forget"> <a href="">Forget Password..?</a></li>
+    </form>
+</body>
+
+</html>
